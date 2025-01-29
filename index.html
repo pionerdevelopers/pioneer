@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Space Course</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg') no-repeat center center fixed;
+            background-size: cover;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+        }
+        .hero {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4em;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .hero p {
+            font-size: 1.5em;
+            animation: fadeIn 5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .button {
+            display: inline-block;
+            padding: 1em 2em;
+            margin-top: 2em;
+            background: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background 0.5s;
+        }
+        .button:hover {
+            background: grey;
+        }
+        .course-sections {
+            margin-top: 5em;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+        .course-sections div {
+            text-align: center;
+        }
+        .course-sections img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to Space Course</h1>
+        <p>Discover the Universe through our Comprehensive Online Course</p>
+        <a href="#explore" class="button">Start Learning</a>
+    </div>
+    <div class="course-sections">
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/A_Hubble_image_of_Jupiter_from_the_Solar_System_and_two_of_its_moons.jpg" alt="Planet">
+            <p>Module 1: The Solar System</p>
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Galaxy_NGC_5866.jpg" alt="Galaxy">
+            <p>Module 2: Galaxies and Stars</p>
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Astronaut_EVA_-_GPN-2000-001177.jpg" alt="Space Exploration">
+            <p>Module 3: Space Exploration</p>
+        </div>
+    </div>
+</body>
+</html>
